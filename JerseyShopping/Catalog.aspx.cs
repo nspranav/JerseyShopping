@@ -31,7 +31,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("1.jpg", Convert.ToInt32(qty1.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                // MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button1.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -56,7 +57,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("2.jpg", Convert.ToInt32(qty2.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button2.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -81,7 +83,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("3.jpg", Convert.ToInt32(qty3.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button3.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -106,7 +109,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("4.jpg", Convert.ToInt32(qty4.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button4.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -131,7 +135,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("5.jpg", Convert.ToInt32(qty5.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button5.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -156,7 +161,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("6.jpg", Convert.ToInt32(qty6.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button6.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -181,7 +187,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("7.jpg", Convert.ToInt32(qty7.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button7.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -206,7 +213,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("8.jpg", Convert.ToInt32(qty8.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button8.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -231,7 +239,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("13.jpg", Convert.ToInt32(qty9.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button9.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -256,7 +265,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("10.jpg", Convert.ToInt32(qty10.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button10.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -281,7 +291,8 @@ namespace JerseyShopping
                     js.Add(new Jersey("11.jpg", Convert.ToInt32(qty11.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                //MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button11.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -306,7 +317,7 @@ namespace JerseyShopping
                     js.Add(new Jersey("12.jpg", Convert.ToInt32(qty12.Text)));
                     Session["jersey"] = js;
                 }
-                MessageBox.Show(this, js.Count.ToString());
+                MessageBox.Show(this, "Item added to cart");
                 button12.BackColor = System.Drawing.Color.Green;
             }
             else
@@ -317,14 +328,7 @@ namespace JerseyShopping
 
         protected void Checkout_Click(object sender, EventArgs e)
         {
-
-           
-                
-
-                MessageBox.Show(this, Session["jersey"].ToString());
-                button1.BackColor = System.Drawing.Color.Green;
-            
-            
+     
             Response.Redirect("~/Confirmation.aspx");
         }
     }

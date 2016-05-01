@@ -14,7 +14,7 @@ namespace JerseyShopping
             string s = string.Empty;
             int total = 0;
             List<Jersey> js = (List<Jersey>)Session["jersey"];
-            MessageBox.Show(this, js.Count.ToString());
+            //MessageBox.Show(this, js.Count.ToString());
             foreach(Jersey j in js)
             {
                 s +="<div class=\"row\">";
